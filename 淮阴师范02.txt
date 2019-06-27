@@ -1,0 +1,237 @@
+﻿昆山杰普软件科技有限公司
+
+		小程序开发实训
+
+		html 
+		css 
+		js python
+
+		网页开发
+
+		童程童美
+
+环境		
+	1. 浏览器
+		firefox	  火狐浏览器
+		chrome		谷歌浏览器
+	2. 编辑器
+		vscode
+	3. 微信开发者工具
+		编辑器
+		浏览器
+	直接下一步进行安装即可
+# day01
+	1. 使用vscode
+		安装插件 open in browser
+	2. 在windows 
+		1) 新建项目结构
+			D:/briup
+				day01
+				day02
+				day03
+				day04
+		2) 通过vscode打开项目结构
+	3. 前端基础
+		软件开发
+			前端开发：网页，app，小程序，桌面版软件
+				html 	超文本标记语言
+				css 	层叠样式表
+				js		Javascript，浏览器脚本语言
+			后端开发：操作数据库
+				裙子
+			硬件开发
+				智能家居，智慧农业，智慧校园...
+					c
+					c++
+					python
+			大数据与云计算
+			人工智能 AI
+				数学，神经网络学...
+
+		非开发类型
+			产品经理（前端开发可以转型的）
+			测试工程师
+			运维工程师
+
+	4. html
+
+		html
+		head
+		title
+		body
+
+		以下所有标签应该写在body标签内
+			h1,h2,h3,p
+			img、a 、b、strong、del、sub、sup、em、span
+			div、ul、li、、
+		
+	5. 行内元素与块元素
+		元素：就是开始标签，结束标签，内容的组合
+
+		<div>
+			<span>one</span>
+			<span>two</span>
+		</div>
+		<img src=""/>
+		<br/>
+
+		块元素：
+			div、h1、h2、h3、ul、li、p、body、html
+			特点：
+				独占一行空间
+				默认宽度为100%，默认高度由内容决定
+				可以为其指定宽和高
+
+
+				<div>1</div>
+				<div>2</div>
+		行内元素
+			span、a、img、em、i、b、strong
+			特点：
+				与其他行内元素共享一行空间
+				默认宽高由内容决定
+				不能直接为其指定宽和高
+
+	6. 元素属性
+		核心属性：
+			绝大多数的元素都具有的属性
+			id
+			class
+			title
+			style
+		特有属性
+			只有某些元素具有的属性
+
+
+		<div>hello world</div>
+
+
+作业：
+	编写个人网页，自己布局，自己写内容把自己介绍清楚即可。
+	尽量使用今天给大家讲的这些标签。
+
+
+
+# day02
+	html 	搭建页面骨架
+	css 	对骨架进行装饰
+	
+1. css如何在html中应用
+		
+1) 直接将样式写在style属性中
+			<div style="color:red;width:100px">hello</div>
+			<div>world</div>
+		2) 嵌入在style标签中,style标签应该出现在head标签中
+			
+<style>
+				
+选择器 {
+					规则;
+					规则;
+				
+}
+			
+</style>
+
+		
+3) 将样式定义在一个css文件中个，然后通过link标签引用这个css文件
+
+	
+2. css语法
+		
+选择器 {
+	color:red;
+			width:100px;
+		}
+
+		1) 核心选择器
+			
+元素选择器 	p、h1、div
+				div {
+
+				}
+				选中标签为div的元素
+			类选择器 		
+				
+.left {
+
+				}
+			选中class为left的元素
+			
+id选择器 		
+				
+#t1 {
+
+				}
+			选中id为t1的元素
+
+			
+和选择器 		
+				p,h1 {
+
+				}
+				选中p标签和h1标签
+			
+并且选择器 	
+				h1#t1 {
+
+				}	
+				选中h1标签，并且h1标签的id为t1
+
+
+		
+2) 层次选择器
+			
+后代选择器
+				选择器1 选择器2
+				
+.header ul {
+
+				}
+				
+选中class为header的元素的所有后代ul元素
+			
+子代选择器
+				选择器1 > 选择器2
+				.header > ul {
+
+				}
+				
+选中class为header的元素的所有子代ul元素
+		
+3) 补充
+			
+子元素过滤器
+				.header > ul > li:nth-child(3) {
+
+				}
+				找到class为header的子元素ul,ul的子元素li，并且li为ul的第三个孩子节点
+			伪类过滤器
+				.header > ul > li:hover {
+
+				}
+				当光标悬浮到li上
+
+			
+伪元素过滤器
+				ul::after {
+
+				}
+				
+在ul的子元素的最后再插入一个子元素
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>列表布局</title>
+  <style>
+    body,ul {
+      margin: 0;
+      padding: 0;
+    }
+    ul {
+      list-style: none;
+    }
+    .products {
+      width: 800px;
+      background-color: #ededed;
+    }
+    .products::after {
+      content: "";
+      display:block;
+      clear: both;
+    }
+    /* (800px - 2*10px )/3=260px */
+    .products > li {
+      float: left;
+      height: 100px;
+      width: 260px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      background-color: teal;
+    }
+    .products > li:nth-child(3n) {
+      margin-right: 0;
+    } 
+  </style>
+</head>
+<body>
+  <ul class="products">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</body>
+</html>

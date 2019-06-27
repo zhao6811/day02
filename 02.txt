@@ -1,0 +1,50 @@
+
+
+<div style="color:red;width:100px">hello</div>
+<div >
+
+
+2.css语法
+div
+{
+ color:red;
+font size: 40px;
+}
+
+
+
+1)核心选择器
+元素选择器  p、h1、div
+类选择器 
+    .className
+.left{
+}选中class为leftd的元素
+id选择器
+和选择器
+并且选择器
+h1#t1{
+}
+选中h1标签
+
+
+
+2）
+
+
+
+
+3）补充
+子元素过滤器
+.header > ul > li:nth-child(2){
+
+}
+找到class为headerd的子元素ul，ul的子元素li，并且li为ul的第三个孩子节点
+
+
+
+
+
+
+
+
+
